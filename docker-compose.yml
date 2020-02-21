@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  app:
+  ssh:
     build:
       context: .
     stdin_open: true

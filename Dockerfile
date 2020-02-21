@@ -20,5 +20,4 @@ RUN echo "root:root_pw" | chpasswd
 # generate host keys if not present
 RUN ssh-keygen -A
 
-# do not detach (-D), log to stderr (-e), passthrough other arguments
-CMD exec /usr/sbin/sshd -d -D -e
+CMD exec /usr/sbin/sshd -d -D
